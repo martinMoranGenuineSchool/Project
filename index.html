@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Python Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+<script src="script.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Placeholder</h1>
+
+<main class="container">
+
+<section class="profile">
+
+<label for="photoUpload">
+<img id="photo" src="https://via.placeholder.com/100">
+</label>
+
+<input type="file" id="photoUpload" hidden>
+
+<div>
+<h1 contenteditable="true" id="name">YOUR NAME</h1>
+<p contenteditable="true" id="grade">YOUR GRADE</p>
+</div>
+
+</section>
+
+<section class="projects">
+
+<h2>Python Exercises</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Fibonacci Generator</h3>
+
+<input id="number" type="number" placeholder="Enter number">
+
+<button id="run">Run Python</button>
+
+<pre id="output"></pre>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
 </body>
 </html>
